@@ -16,7 +16,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-</style>	
+</style>
 <br />
 <br />
 <div>
@@ -38,10 +38,11 @@
 
 <c:forEach var="hotel" items="${list}">
 	<div class="work__projects">
-		
+
 		<a href="info?h_num=${hotel.h_num}" class="project"
-			data-type="front-end"> <img src="<%=request.getContextPath()%>/img/${hotel.picture}" width=380px height=350px alt="Youtube"
-			class="project__img" />
+			data-type="front-end"> <img
+			src="<%=request.getContextPath()%>/img/${hotel.picture}" width=380px
+			height=350px alt="Youtube" class="project__img" />
 			<div class="project__description">
 				<h3>${hotel.h_name}</h3>
 				<span>Stay with your love</span>
@@ -60,14 +61,15 @@
 				<li>${hotel.reference_room}</li>
 			</ul>
 		</a>
-	<div>
-	<c:if test="${id eq 'admin'}">
-		<h3 style="text-align: right; margin-right: 50px; font-weight: bold;">
-			<a href="updateForm?h_num=${hotel.h_num}">[호텔 수정]</a>
-			<a href="delete?h_num=${hotel.h_num}">[호텔 삭제]</a>
-		</h3>
-	</c:if>
-	</div>
+		<div>
+			<c:if test="${id eq 'admin'}">
+				<h3
+					style="text-align: right; margin-right: 50px; font-weight: bold;">
+					<a href="updateForm?h_num=${hotel.h_num}">[호텔 수정]</a> <a
+						href="delete?h_num=${hotel.h_num}">[호텔 삭제]</a>
+				</h3>
+			</c:if>
+		</div>
 	</div>
 </c:forEach>
 <br />

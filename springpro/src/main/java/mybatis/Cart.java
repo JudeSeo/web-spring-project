@@ -12,6 +12,7 @@ public class Cart {
 	private int cartStock;
 	private String gbsName;
 	private int gbsPrice;
+	private String picture;
 	
 	
 	public int getCartId() {
@@ -50,14 +51,15 @@ public class Cart {
 	public void setGbsPrice(int gbsPrice) {
 		this.gbsPrice = gbsPrice;
 	}
+	public String getPicture() {
+		return picture;
+	}
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
 	@Override
 	public String toString() {
 		return "Cart [cartId=" + cartId + ", id=" + id + ", gbsNum=" + gbsNum + ", cartStock=" + cartStock
-				+ ", gbsName=" + gbsName + ", gbsPrice=" + gbsPrice + "]";
+				+ ", gbsName=" + gbsName + ", gbsPrice=" + gbsPrice + ", picture=" + picture + "]";
 	}
-	
-	
-	
-	
-	
 }

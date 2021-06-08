@@ -7,6 +7,35 @@
   text-align: center;
 }
 
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 250px;
+    margin: 10px;
+    background-color: white;
+}
+
+.project__img {
+    width: 250px;
+    height: 250px;
+}
+
+.project_desc{
+	margin:30px;
+	width:50%;
+	padding:10px;
+}
+
 .ss {
   display: flex;
   justify-content: center;

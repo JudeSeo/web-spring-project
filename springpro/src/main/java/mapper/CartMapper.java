@@ -19,8 +19,8 @@ public interface CartMapper {
 	Cart selectOne(int cartId);
 	
 	
-	@Insert("insert into cart (cartId, id, gbsNum, gbsName, gbsPrice, cartStock) "
-			+"values(#{cartId},#{id},#{gbsNum},#{gbsName},#{gbsPrice},#{cartStock})")
+	@Insert("insert into cart (cartId, id, gbsNum, gbsName, gbsPrice, cartStock, picture) "
+			+"values(#{cartId},#{id},#{gbsNum},#{gbsName},#{gbsPrice},#{cartStock}, #{picture})")
 	int insert(Cart cart);
 	
 	@Delete("delete from cart where cartId=#{cartId}")

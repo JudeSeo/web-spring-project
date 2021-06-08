@@ -45,6 +45,7 @@ margin-right:auto;
 								action="<%=request.getContextPath()%>/cart/regist">
 								<%-- <input type="hidden" name="cartId" value="${Cart.cartId}">
 								<input type="hidden" name="id" value="${Cart.id}"> --%>
+								<input type="hidden" name="picture" value="${goods.picture}">
 								<input type="hidden" name="gbsName" value="${goods.gbsName}">
 								<input type="hidden" name="gbsPrice" value="${goods.gbsPrice}">
 								<input type="hidden" name="gbsNum" value="${goods.gbsNum}">
